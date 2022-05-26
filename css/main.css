@@ -1,0 +1,1711 @@
+body {
+    margin: 0;
+
+    /* font-family: 'Red Hat Display', sans-serif;
+    font-family: 'Permanent Marker', cursive; */
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #000;
+
+    background-color: #fff;
+}
+
+*,
+:before,
+:after {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.container {
+    max-width: 1470px;
+    margin: 0 auto;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.container__small {
+    max-width: 1150px;
+    margin: 0 auto;
+    padding-right: 80px;
+    padding-left: 80px;
+}
+
+/* Header */
+.header {
+    position: absolute;
+    width: 100%;
+    height: 64px;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+
+    background-color: #fff;
+    
+}
+
+
+.header.fixed {
+    position: fixed;
+    height: auto;
+    background-color: #EEF0F4;
+}
+
+
+.header__inner {
+    padding: 10px 49px 10px 36px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.nav {
+    display: flex;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: #081158;
+    margin-left: 39px;
+}
+
+.nav__link {
+    text-decoration: none;
+    margin-left: 39px;
+    font-family: 'Red Hat Display';
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0.5px;
+    color: #081158;
+    transition: all 0.3s ease;
+}
+
+.nav__link:hover {
+    transform: scale(1.2);
+}
+
+
+.btn {
+    position: relative;
+    border: 1px solid #051165;
+    padding: 12px 20px 12px 40px;
+    background: #051165;
+    border-radius: 10px;
+    color: #fff;
+    margin-left: 20px;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+}
+
+.btn:hover {
+    background: #081158;
+}
+
+.btn::before {
+    position: absolute;
+    content: url('../images/icon/galka.svg');
+    top: 15px;
+    left: 17px;
+    z-index: 2;
+
+}
+
+.btn__intro {
+    margin-left: 0;
+}
+
+.btn--workouts {
+    margin-left: 0;
+
+}
+
+.nav__cart {
+    margin-left: 25px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.nav__cart:hover {
+    transform: scale(1.1);
+}
+
+/* Intro */
+.intro {
+    background: #EEF0F4;   
+}
+
+.intro__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 114px;
+    padding-bottom: 150px;
+ 
+}
+
+.intro__photo__text {
+    font-family: 'Permanent Marker';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 70px;
+    letter-spacing: 1px;
+    /* color: #8EA5A0; */
+    color: #333;
+    text-shadow: 2px 2px 2px red;
+
+    padding-left: 120px;
+
+}
+
+.carousel-inner {
+    max-width: 659px;
+}
+
+.carousel-item {
+    position: relative;
+}
+
+.carousel-control-prev-icon {
+    position: absolute;
+    bottom: 67px;
+    left: 0;
+    width: 35px;    
+    height: 35px;
+    opacity: 0.4;
+
+    border: 1px solid #fff;
+    border-radius: 50px;
+    padding: 20px 40px;
+}
+
+.carousel-control-prev-icon:hover {
+    opacity: 1;
+}
+
+.carousel-control-next-icon {
+    position: absolute;
+    right: 50px;
+    bottom: 67px;
+    width: 35px;    
+    height: 35px;
+    opacity: 0.4;
+
+    border: 1px solid #fff;
+    border-radius: 50px;
+    padding: 20px 40px;
+}
+
+.carousel-control-next-icon:hover {
+    opacity: 1;
+}
+
+.carousel-caption {
+    color: red;
+    font-family: 'Red Hat Display';
+    font-style: italic;
+    margin-bottom: 30px;
+}
+
+.intro__content {
+    max-width: 552px;
+}
+
+.intro__content__subtitle{
+    
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #081158;
+}
+
+.intro__content__title{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 72px;
+    line-height: 79px;
+    color: #081158;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    /* text-shadow: 2px 2px 2px red; */
+}
+
+.intro__content__text {
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 36px;
+    color: #081158;
+    padding-bottom: 25px;
+    max-width: 496px;
+}
+
+.intro__desc {
+    background: #081158;
+}
+
+.intro__wraper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 93px 120px 123px 120px;
+}
+
+.link__wraper {
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #DFDFDF;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.link__wraper:hover {
+    color: red;
+    transform: scale(1.2);
+    text-decoration: none;
+}
+
+/* Starts */
+.starts__inner {
+    text-align: center;
+    max-width: 703px;
+    margin: auto;
+}
+
+.starts__inner__title {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 62px;
+    line-height: 70px;
+    text-align: center;
+    color: #081158;
+    padding-top: 81px;
+    padding-bottom: 26px;
+}
+
+.starts__wraper {
+    margin-top: 100px;
+    margin-bottom: 150px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.starts__item {
+    width: 391px;
+    margin-bottom: 107px;
+}
+
+.starts__item:nth-child(3),
+.starts__item:nth-child(4) {
+    margin-bottom: 0;
+}
+
+.starts__item__title {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 33px;
+    text-align: center;
+    color: #081158;
+    max-width: 330px;
+    margin: auto;
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+
+
+.starts__item__text {
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 29px;
+    text-align: center;
+    color: #081158;
+}
+
+/* Workouts */
+
+.workouts {
+    background:#EEF0F4;
+    padding-bottom: 150px;
+    padding-top: 150px;
+}
+
+.workouts__inner__title {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 86px;
+    line-height: 99px;
+    color: #081158;
+    max-width: 787px;
+    margin-right: auto;
+}
+.workouts__inner__text {
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 36px;
+    color: #081158;
+    padding-top: 31px;
+    padding-bottom: 25px;
+    max-width: 590px;
+    margin-right: auto;
+}
+
+.workouts__wraper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.workouts__item {
+    width: 423px;
+    background: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.workouts__item:hover {
+    transform: scale(1.1);
+}
+
+.workouts__item__time {
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #081158;
+    padding-bottom: 14px;
+    padding-top: 30px;
+    padding-left: 30px;
+    position: relative;
+}
+
+.workouts__item__time::after {
+    position: absolute;
+    content: "free";
+    top: 26px;
+    right: 26px;
+    z-index: 1;
+
+    font-family: 'Permanent Marker';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: 1px;
+    color: #EC8675;
+
+}
+
+.workouts__item__title {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.5px;
+    color: #081158;
+    padding-left: 30px;
+    }
+
+.workouts__item__text {
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0.5px;
+    color: #081158;
+    padding-bottom: 29px;
+    padding-top: 14px;
+    padding-left: 43px;
+}
+
+.workouts--free {
+    background: url('../images/with-shadow.jpg') no-repeat center;
+    background-size: cover;
+}
+
+
+
+.workouts--free .workouts__inner__title {
+    color: #fff;
+}
+
+.workouts--free .workouts__inner__text {
+    color: #fff;
+}
+
+.workouts--free .workouts__item__time::after {
+    position: absolute;
+    content: "$ 19.99 USD";
+    top: 26px;
+    right: 26px;
+    z-index: 1;
+
+    font-family: 'Permanent Marker';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: 1px;
+    color: #EC8675;
+
+}
+
+/* Sweat */
+.sweat {
+    background: url('../images/sweet.jpg') no-repeat center;
+    background-size: cover;
+}
+
+.sweat__text {
+    font-family: 'Permanent Marker';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 70px;
+    text-align: center;
+    letter-spacing: 1px;
+    color: #FFFFFF;
+    padding-top: 234px;
+    padding-bottom: 234px;
+
+}
+
+/* Benefit */
+.benefit__inner {
+    padding-top: 150px;
+    padding-bottom: 150px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.benefit__content {
+    max-width: 523px;
+}
+
+.benefit__content__title {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 70px;
+    color: #081158;
+    }
+
+.benefit__content__text {
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 36px;
+    color: #081158;
+    margin-top: 30px;
+    margin-bottom: 25px;
+}
+
+
+.btn--benefit {
+    margin-left: 0;
+}
+
+/* Water */
+.water__img {
+    margin-bottom: 150px;
+    width: 100%;
+    max-height: 764px;
+}
+
+/* Tricks */
+.tricks__inner {
+    text-align: center;
+    max-width: 775px;
+    margin: auto;
+}
+
+.tricks__inner__title {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 61px;
+    line-height: 70px;
+    text-align: center;
+    color: #081158;
+}
+
+.tricks__inner__text {
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 36px;
+    text-align: center;
+    color: #081158;
+    margin-top: 35px;
+    margin-bottom: 25px;
+}
+
+.btn--tricks {
+    margin-left: 0;
+}
+
+.tricks__wraper {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.tricks__wraper__img {
+    transition: all 0.4s ease;
+    cursor: pointer;
+}
+
+.tricks__wraper__img:hover {
+    /* transform: scale(1.2); */
+    transform: rotateX(-90deg);
+}
+
+/* Gelary */
+.gelary {
+    background: #EEF0F4;
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+
+.gelary__inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+.gelary__inner__item {
+    margin-bottom: 45px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+.gelary__inner__item:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.gelary__inner__item:nth-child(7),
+.gelary__inner__item:nth-child(8),
+.gelary__inner__item:nth-child(9) {
+    margin-bottom: 0;
+}
+
+/* Footer */
+.footer {
+    background: #081158;
+}
+
+.footer__inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 100px;
+    padding-bottom: 65px;
+}
+
+.footer__wraper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer__social__icon {
+    display: block;
+    fill: #fff;
+    height: 30px;  
+    width: 141px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.footer__social__icon:hover {
+    transform: scale(1.1);
+    fill: red;
+}
+
+.footer__item__text {
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 14px;
+    
+}
+
+.footer__item {
+    width: 287px;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__item a {
+    margin-left: 0;
+    text-decoration: none;
+}
+
+.footer__item:last-child {
+    margin-left: 185px;
+}
+
+.footer__item__mail {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 27px;
+    line-height: 48px;
+    letter-spacing: 0.5px;
+    color: #FFFFFF;
+    transition: all 0.2s ease;
+    text-decoration: none;
+}
+
+.footer__item__mail:hover {
+    color: red;
+}
+
+.footer__item__text__title {
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-top: 30px;
+    margin-bottom: 9px;
+}
+
+.footer__item__link {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    letter-spacing: 0.5px;
+    color: #FFFFFF;
+    margin-top: 5px;
+    transition: all 0.2s ease;
+    text-decoration: none;
+}
+
+.footer__item__link:hover {
+    transform: scale(1.1);
+    color:red
+}
+
+
+
+.footer__icon {
+    padding-bottom: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.item__icon {
+    width: 60px;
+    height: 40px;
+    margin-right: 20px;
+}
+
+
+
+.footer__soc {
+    display: flex;
+    padding-right: 70px;
+    text-decoration: none;
+}
+
+.soc__link {
+    margin-left: 0;
+    text-decoration: none;
+}
+
+.footer__soc__icon {
+    display: block;
+    fill: #fff;
+    height: 30px;
+    width: 30px;
+    margin-left: 40px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+  
+}
+
+.footer__soc__icon:hover {
+    fill: rgb(202, 139, 13);
+    transform: scale(1.1);
+}
+
+
+.button:hover {
+    color: #fff;
+}
+
+
+
+/* Added */
+.btn:hover {
+    color: red;
+
+}
+
+.nav__link:hover {
+    text-decoration: none;
+    color: red;
+}
+
+.btn--main:hover {
+    color: red;
+}
+
+.btn__intro:hover {
+    color: red;
+}
+
+
+/* Bureger */
+
+.burger {
+    display: none;
+    padding: 10px 4px;
+    background: none;
+    border: 0;
+    cursor: pointer;
+}
+
+.burger__item {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: #000;
+    font-size: 0;
+    color: transparent;
+    position: relative;
+}
+
+.burger__item:before,
+.burger__item:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    position: absolute;
+    right: 0;
+    z-index: 1;
+}
+
+.burger__item:before {
+    width: 34px;
+    top: -8px;
+}
+
+.burger__item:after {
+    width: 26px;
+    bottom: -8px;
+}
+
+/* Up arrow */
+
+.up__arrow {
+    display: none;
+
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    width: 70px;
+    height: 70px;
+    background: url(../images/up-arrow.png);
+    background-size: cover;
+    cursor: pointer;
+}
+
+
+
+/* Media
+----------------------------------------------- */
+
+/* 1200px ======================================= */
+@media screen and (max-width: 1400px){
+    
+    .container {
+        max-width: 1024px;
+    }
+
+    /* Header */
+
+    .btn {
+        padding: 6px 10px 6px 30px;
+        font-size: 13px;
+    }
+    
+    .btn:before {
+        top: 6px;
+        left: 10px;
+    }
+
+    /* Intro */
+    .intro__inner {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-bottom: 90px;
+    }
+
+    .intro__photo__text {
+        padding-bottom: 10px;
+        padding-left: 150px;
+    }
+
+    .intro__content__subtitle {
+        margin-top: 30px;
+    }
+
+    .intro__content__title {
+        font-size: 60px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    .intro__wraper {
+        padding: 90px 70px;
+    }
+
+    /* Starts */
+    .starts__wraper {
+        justify-content: center;
+    }
+
+
+    .starts__inner__title {
+        font-size: 50px;
+    }
+
+    .starts__item  {
+        padding: 0 20px;
+    }
+
+    /* Works */
+    .workouts {
+        padding-top: 90px;
+        padding-bottom: 90px;
+    }
+
+    .workouts__inner {
+        text-align: center;
+    }
+
+    .workouts__inner__title {
+        margin: auto;;
+    }
+
+    .workouts__inner__text {
+        margin: auto;;
+    }
+
+    .workouts__wraper {
+        flex-direction: column;
+        margin-top: 50px;
+    }
+    
+    .workouts__item {
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+
+    /* Benefit */
+    .benefit__inner {
+        justify-content: center;
+        padding-bottom: 90px;
+        padding-top: 90px;
+    }
+
+    .benefit__content {
+        margin-bottom: 40px;
+    }
+
+    .btn--benefit {
+        margin-left: 30px;
+    }
+
+    /* Water */
+    .water__img {
+        margin-bottom: 90px;
+    }
+
+    /* Tricks */
+    .tricks__wraper {
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .tricks__wraper__img {
+        width: fit-content;
+        margin: auto;
+        margin-bottom: 30px;
+    }
+
+    /* Gelary */
+    .gelary {
+        padding-top: 90px;
+        padding-bottom: 90px;
+    }
+
+    .gelary__inner__item:last-child {
+        display: none;
+    }
+
+    /* Footer */
+    .footer__item {
+        max-width: 170px;
+        margin-left: 145px;
+    }
+
+      /* Btn */
+      .btn {
+        padding: 10px 7px 10px 7px;
+        font-size: 13px;
+    }
+    
+    .btn:before {
+        display: none;
+    }
+}
+
+
+
+
+/* 991px ======================================= */
+@media screen and (max-width: 991px) {
+
+
+    .container {
+        max-width: 750px;
+    }
+
+    /* Header */
+    .header__inner {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    /* Nav */
+    .nav {
+        display: none;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .nav {
+        display: none;
+        justify-content: center; 
+        position: absolute;
+        right: 0;
+        top: 50px;
+        z-index: 2;
+        background: #EEF0F4;
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .nav.show {
+        display: block;
+    }
+
+    .nav .btn--main {
+        display: none;
+    }
+
+    /* Intro */
+    .intro__inner {
+        padding-bottom: 60px;
+    }
+
+    .intro__photo__text {
+        padding-left: 170px;
+    }
+
+    .intro__wraper {
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 40px;
+        padding-bottom: 25px;
+    } 
+
+    .link__wraper {
+        margin-left: 0;
+        margin-bottom: 15px;
+    }
+
+    /* Starts */
+    .starts__wraper {
+        margin-bottom: 70px;
+        margin-top: 40px;
+    }
+
+    .starts__item {
+        margin-bottom: 40px;
+    }
+
+    .starts__item:nth-child(3) {
+        margin-bottom: 40px;
+    }
+
+    .starts__inner__title {
+        padding-top: 50px;
+        font-size: 45px;
+        line-height: 50px;
+    }
+
+    .btn--starts {
+        margin-left: 0;
+    }
+
+    /* Workouts */
+    .workouts {
+        padding-bottom: 50px;
+        padding-top: 50px;
+    }
+
+    .workouts__inner__title {
+        font-size: 66px;
+        line-height: 60px;
+    }
+   
+
+    .workouts__inner__text {
+        max-width: 430px;
+    }
+
+    /* Benefit */
+    .benefit__inner {
+        padding-top: 70px;
+        padding-bottom: 90px;
+    }
+
+    .benefit__content__title {
+        font-size: 50px;
+        line-height: 60px;
+    }
+
+    .btn--benefit {
+        margin-left: 0;
+    } 
+
+    .benefit__shadow {
+        margin-top: 65px;
+    }
+
+    /* Water */
+    .water__img {
+        margin-bottom: 70px;
+    }
+   
+    /* Tricks */
+    .tricks__inner__title {
+        font-size: 55px;
+        line-height: 50px;
+    }
+
+    .tricks__inner__text {
+        margin-top: 20px;
+    }
+
+    /* Gelary */
+    .gelary__inner {
+        justify-content: center;
+    }
+
+    .gelary__inner__item:last-child {
+        display: block;
+    }
+
+    .gelary__inner__item:nth-child(7), 
+    .gelary__inner__item:nth-child(8), 
+    .gelary__inner__item:nth-child(9) {
+        margin-bottom: 45px;
+    }
+
+    /* Footer */
+    .footer__inner {
+        flex-wrap: wrap;
+        flex-direction: column;
+
+
+        padding-top: 70px;
+        padding-bottom: 30px;
+
+    }
+
+    .footer__inner__logo {
+        /* margin: auto; */
+        margin-bottom: 40px;
+    }
+
+    .footer__wraper {
+        justify-content: center;
+        /* flex-direction: column; */
+        /* margin: auto; */
+        justify-content: space-between;
+    }
+    
+    .footer__item {
+        margin-bottom: 40px;
+        margin-left: 0;
+    }
+
+    .footer__item:last-child {
+        margin-left: 0;
+    }
+
+    .footer__item__text__title {
+        margin-top: 15px;
+    }
+
+    .footer__icon {
+        padding-bottom: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        justify-content: start;
+    }
+
+    .footer__pay {
+        margin: auto;
+        margin-bottom: 30px;
+    }
+
+    .item__icon {
+        margin-right: 0;
+    }
+
+    .footer__soc {
+        padding-right: 0;
+        margin: auto;
+    }
+
+    .footer__soc__icon {
+        margin-left: 0;
+        margin-right: 20px;
+    }
+
+}
+
+
+
+
+/* 767px ======================================= */
+@media screen and (max-width: 767px) {
+    
+    .container {
+        max-width: none;
+    }
+
+    /* Intro */
+    .intro__inner {
+        padding-bottom: 60px;
+    }
+
+    .intro__photo__text {
+        padding-left: 100px;
+    }
+
+    .intro__wraper {
+        flex-direction: column;
+        justify-content: center;
+    } 
+
+    .link__wraper {
+        margin-left: 0;
+    }
+
+    /* Starts */
+    .starts__wraper {
+        margin-bottom: 70px;
+        margin-top: 70px;
+    }
+
+    .starts__item {
+        margin-bottom: 40px;
+    }
+
+    .starts__inner__title {
+        padding-top: 50px;
+    }
+
+    .btn--starts {
+        margin-left: 0;
+    }
+
+    /* Workouts */
+    .workouts {
+        padding-bottom: 50px;
+        padding-top: 50px;
+    }
+
+    .workouts__inner__title {
+        font-size: 70px;
+        line-height: 82px;
+    }
+   
+
+    .workouts__inner__text {
+        max-width: 430px;
+    }
+
+    /* Benefit */
+    .benefit__inner {
+        padding-top: 70px;
+        padding-bottom: 90px;
+    }
+
+    .benefit__content__title {
+        font-size: 50px;
+        line-height: 60px;
+    }
+
+    .btn--benefit {
+        margin-left: 0;
+    } 
+
+    .benefit__shadow {
+        margin-top: 30px;
+    }
+
+    /* Water */
+    .water__img {
+        margin-bottom: 70px;
+    }
+   
+    /* Tricks */
+    .tricks__inner__title {
+        font-size: 55px;
+        line-height: 50px;
+    }
+
+    /* Gelary */
+    .gelary__inner {
+        justify-content: center;
+    }
+
+    .gelary__inner__item:last-child {
+        display: block;
+    }
+
+    .gelary__inner__item:nth-child(7), 
+    .gelary__inner__item:nth-child(8), 
+    .gelary__inner__item:nth-child(9) {
+        margin-bottom: 45px;
+    }
+
+    /* Footer */
+    .footer__inner {
+        flex-wrap: wrap;
+        flex-direction: column;
+
+
+        padding-top: 70px;
+        padding-bottom: 30px;
+
+    }
+
+    .footer__inner__logo {
+        /* margin: auto; */
+        margin-bottom: 40px;
+    }
+
+    .footer__wraper {
+        justify-content: center;
+        /* flex-direction: column; */
+        /* margin: auto; */
+        justify-content: space-between;
+    }
+    
+    .footer__item {
+        margin-bottom: 40px;
+        margin-left: 0;
+    }
+
+    .footer__item:last-child {
+        margin-left: 0;
+    }
+
+    .footer__item__text__title {
+        margin-top: 15px;
+    }
+
+    .footer__icon {
+        padding-bottom: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        justify-content: start;
+    }
+
+    .footer__pay {
+        margin: auto;
+        margin-bottom: 30px;
+    }
+
+    .item__icon {
+        margin-right: 0;
+    }
+
+    .footer__soc {
+        padding-right: 0;
+        margin: auto;
+    }
+
+    .footer__soc__icon {
+        margin-left: 0;
+        margin-right: 20px;
+    }
+}
+
+
+
+/* 575px ======================================= */
+@media screen and (max-width: 575px) {
+
+    .container {
+        min-width: 375px;
+    }
+
+    /* Header */
+    .header {
+        height: auto;
+    }
+    .nav {
+        padding-bottom: 0;
+        padding-top: 0;
+    }
+
+    /* Intro */
+    .intro__inner {
+        padding-bottom: 40px;
+        padding-top: 75px;
+    }
+
+    .intro__content__title {
+        font-size: 40px;
+        padding-bottom: 15px;
+        line-height: 50px;
+    }
+
+    .carousel-inner {
+        max-width: 448px;
+    }
+
+    .intro__photo__text {
+        font-size: 45px;
+        padding-left: 55px;
+        padding-bottom: 0;
+    }
+
+    .d-block {
+        width: 345px;
+    }
+
+    .carousel-control-next-icon {
+        right: 10px;
+        bottom: 50px;
+        padding: 20px 20px;
+    }
+
+    .carousel-control-prev-icon {
+        left: -25px;
+        bottom: 50px;
+        padding: 20px 20px;
+    }
+
+    .intro__wraper {
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 20px;
+    } 
+
+    .link__wraper {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    /* Starts */
+    .starts__wraper {
+        margin-bottom: 70px;
+        margin-top: 70px;
+    }
+
+    .starts__item {
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+
+
+    .starts__inner__title {
+        padding-top: 40px;
+        font-size: 30px;
+        line-height: 35px;
+    }
+
+    .starts__wraper {
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+
+    .btn--starts {
+        margin-left: 0;
+    }
+
+    /* Workouts */
+    .workouts {
+        padding-bottom: 0px;
+        padding-top: 40px;
+    }
+
+    .workouts__inner__title {
+        font-size: 45px;
+        line-height: 47px;
+    }
+   
+
+    .workouts__inner__text {
+        padding-top: 15px;
+        padding-bottom: 20px;
+    }
+
+
+    .workouts__item {
+        width: 345px;
+    }
+
+    .workout__item__img {
+        width: 345px;
+    }
+
+    .workouts__wraper {
+        margin-top: 30px;
+    }
+
+
+    /* Benefit */
+    .benefit__inner {
+        padding-top: 70px;
+        padding-bottom: 50px;
+    }
+
+    .benefit__content__title {
+        font-size: 40px;
+        line-height: 45px;
+    }
+
+    .benefit__content__text {
+        margin-top: 15px;
+        margin-bottom: 20px;
+    }
+
+    .btn--benefit {
+        margin-left: 0;
+    } 
+
+    .benefit__shadow {
+        margin-top: 50px;
+    }
+
+    .benefit__shadow__img {
+        width: 345px;
+    }
+
+    /* Water */
+    .water__img {
+        margin-bottom: 40px;
+    }
+   
+    /* Tricks */
+    .tricks__inner__title {
+        font-size: 55px;
+        line-height: 50px;
+    }
+
+    .tricks__wraper__img {
+        width: 345px;
+    }
+
+    .tricks__wraper {
+        padding-top: 31px;
+        padding-bottom: 0px;
+    }
+
+    /* Gelary */
+
+    .gelary {
+        padding-top: 40px;
+        padding-bottom: 0px;
+    }
+
+    .gelary__inner {
+        justify-content: center;
+    }
+
+    .gelary__inner__item {
+        width: 345px;
+    }
+
+    .gelary__inner__item:hover {
+        transform: scale(1.1);
+    }
+
+    .gelary__inner__item:last-child {
+        display: block;
+    }
+
+    .gelary__inner__item:nth-child(7), 
+    .gelary__inner__item:nth-child(8), 
+    .gelary__inner__item:nth-child(9) {
+        margin-bottom: 45px;
+    }
+
+    /* Footer */
+    .footer__inner {
+        flex-wrap: wrap;
+        flex-direction: column;
+
+
+        padding-top: 70px;
+        padding-bottom: 0;
+
+    }
+
+    .footer__inner__logo {
+        /* margin: auto; */
+        margin-bottom: 40px;
+    }
+
+    .footer__wraper {
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+    
+    .footer__item {
+        margin-bottom: 40px;
+        margin-left: 0;
+    }
+
+    .footer__item__mail {
+        font-size: 20px;
+        line-height: 20px;
+    }
+
+    .footer__item__link {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    
+    .footer__item:last-child {
+        margin-left: 0;
+    }
+
+    .footer__item__text__title {
+        margin-top: 15px;
+    }
+
+    .footer__icon {
+        padding-bottom: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        justify-content: start;
+    }
+
+    .footer__pay {
+        margin: auto;
+        margin-bottom: 10px;
+    }
+
+    .item__icon {
+        margin-right: 0;
+    }
+
+    .footer__soc {
+        padding-right: 0;
+        margin: auto;
+    }
+
+    .footer__soc__icon {
+        margin-left: 0;
+        margin-right: 20px;
+    }
+
+    /* Btn */
+    .btn {
+        padding: 7px 5px 7px 5px;
+        font-size: 12px;
+    }
+    
+    .btn:before {
+        display: none;
+    }
+
+
+    .up__arrow {
+        bottom: 20px;
+        right: 20px;
+        width: 45px;
+        height: 45px;
+    }
+}
+
